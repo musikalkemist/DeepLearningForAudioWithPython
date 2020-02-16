@@ -41,7 +41,7 @@ if __name__ == "__main__":
         keras.layers.Flatten(input_shape=(X.shape[1], X.shape[2])),
 
         # 1st dense layer
-        keras.layers.Dense(512, input_dim=X_train.shape[1], activation='relu'),
+        keras.layers.Dense(512, activation='relu'),
 
         # 2nd dense layer
         keras.layers.Dense(256, activation='relu'),
