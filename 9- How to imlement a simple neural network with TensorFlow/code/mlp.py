@@ -39,7 +39,7 @@ if __name__ == "__main__":
     # choose optimiser
     optimizer = tf.keras.optimizers.SGD(learning_rate=0.1)
 
-    # compilie model
+    # compile model
     model.compile(optimizer=optimizer, loss='mse')
 
     # train model
