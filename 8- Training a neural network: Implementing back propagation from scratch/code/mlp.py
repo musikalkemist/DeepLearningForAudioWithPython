@@ -139,7 +139,7 @@ class MLP(object):
                 sum_errors += self._mse(target, output)
 
             # Epoch complete, report the training error
-            print("Error: {} at epoch {}".format(sum_errors / len(items), i+1))
+            print("Error: {} at epoch {}".format(sum_errors / len(inputs), i+1))
 
         print("Training complete!")
         print("=====")
