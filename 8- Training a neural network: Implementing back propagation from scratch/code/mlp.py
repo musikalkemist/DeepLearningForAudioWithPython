@@ -176,7 +176,7 @@ class MLP(object):
         Returns:
             y (float): Output
         """
-        return x * (1.0 - x)
+        return self._sigmoid(x) * (1.0 - self._sigmoid(x))
 
 
     def _mse(self, target, output):
