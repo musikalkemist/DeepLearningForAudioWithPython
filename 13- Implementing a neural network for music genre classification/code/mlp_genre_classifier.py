@@ -21,7 +21,7 @@ def load_data(data_path):
     X = np.array(data["mfcc"])
     y = np.array(data["labels"])
 
-    print("Data succesfully loaded!")
+    print("Data successfully loaded!")
 
     return  X, y
 
