@@ -3,6 +3,9 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 import tensorflow.keras as keras
 import matplotlib.pyplot as plt
+import sys
+from tensorflow.keras.utils import plot_model
+
 
 DATA_PATH = "../13/data_10.json"
 
@@ -97,6 +100,20 @@ def build_model(input_shape):
 
     return model
 
+def show_model(model):
+    plot_model(
+    model,
+    to_file='model.png',
+    show_shapes=False,
+    show_dtype=False,
+    show_layer_names=True,
+    rankdir='TB',
+    expand_nested=False,
+    dpi=96,
+    layer_range=None,
+    show_layer_activations=False,
+    show_trainable=False
+)
 
 if __name__ == "__main__":
 
@@ -106,6 +123,8 @@ if __name__ == "__main__":
     # create network
     input_shape = (X_train.shape[1], X_train.shape[2]) # 130, 13
     model = build_model(input_shape)
+    show_model(model)
+    sys.exit(0)
 
     # compile model
     optimiser = keras.optimizers.Adam(learning_rate=0.0001)

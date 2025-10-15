@@ -3,8 +3,8 @@ import os
 import math
 import librosa
 
-DATASET_PATH = "path/to/marsyas/dataset"
-JSON_PATH = "data_10.json"
+DATASET_PATH = "/home/bilbo/dev/audio_classes_1"
+JSON_PATH = "data_1.json"
 SAMPLE_RATE = 22050
 TRACK_DURATION = 30 # measured in seconds
 SAMPLES_PER_TRACK = SAMPLE_RATE * TRACK_DURATION
@@ -46,7 +46,7 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
             # process all audio files in genre sub-dir
             for f in filenames:
 
-		# load audio file
+		        # load audio file
                 file_path = os.path.join(dirpath, f)
                 signal, sample_rate = librosa.load(file_path, sr=SAMPLE_RATE)
 
