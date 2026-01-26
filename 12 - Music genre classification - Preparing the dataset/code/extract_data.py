@@ -1,3 +1,7 @@
+# Based on the original implementation by Valerio.
+# Includes improvements over the video tutorial: automatic dataset downloading, robust error handling, and an enhanced CLI.
+# NOTE: The deprecated original source code is available on the "legacy" branch.
+
 import json
 import os
 import math
@@ -6,9 +10,10 @@ import subprocess
 import time
 import warnings
 
-DATASET_PATH = "../../GTZAN_dataset/genres" # Change it to your local path if needed
-JSON_PATH = "../../GTZAN_dataset/data_10.json"
-DOWNLOADER_PATH = "../../dataset_downloader.py"
+ROOT = "../../"
+DATASET_PATH = f"{ROOT}GTZAN_dataset/genres" # Change it to your local path if needed
+JSON_PATH = f"{ROOT}GTZAN_dataset/data_10.json"
+DOWNLOADER_PATH = f"{ROOT}dataset_downloader.py"
 SAMPLE_RATE = 22050
 TRACK_DURATION = 30 # measured in seconds
 SAMPLES_PER_TRACK = SAMPLE_RATE * TRACK_DURATION
@@ -94,7 +99,7 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
                         if (process_count <= 10) or (process_count % 10 == 0):
                             updated_count = process_count
                         if (d % 2 == 0) or (d + 1 == 10):
-                            print("\r  [{:04d} files ready]  {}, segment:{:02d}  ".format(round(updated_count,2), f, d+1), end="", flush=True)
+                            print("\r  [{:04d} chunks ready]  {}, segment:{:02d}  ".format(round(updated_count,2), f, d+1), end="", flush=True)
 
     # Ensure the directory exists (prevents "FileNotFoundError")
     os.makedirs(os.path.dirname(json_path), exist_ok=True)
@@ -103,7 +108,7 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
     try:
         with open(json_path, "w") as fp:
             json.dump(data, fp, indent=4)
-        print(f"\n\n☑️ Successfully saved data to {json_path}\n")
+        print(f"\n\n☑️  Successfully saved data to {json_path}\n")
         
     except OSError as e:
         # Catch file system errors (permissions, disk full, bad path)
@@ -122,7 +127,7 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
     print("✅ Success! Dataset is ready for training.\n\n")
         
 if __name__ == "__main__":
-
+    
     # Check if dataset exists
     if not os.path.exists(DATASET_PATH):
         print(f"\n\n⚠️  ALERT: Dataset not found at {DATASET_PATH}")
