@@ -15,7 +15,7 @@ import time
 import warnings
 from joblib import Parallel, delayed
 
-DEBUG = True
+DEBUG = False
 
 ROOT = "../../"
 DATASET_PATH = f"{ROOT}GTZAN_dataset/genres" # Change it to your local path if needed
