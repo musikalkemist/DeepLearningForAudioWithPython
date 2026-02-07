@@ -50,7 +50,9 @@ def save_mfcc(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_length=512, 
                 file_path = os.path.join(dirpath, f)
                 try:
                     signal, sample_rate = librosa.load(file_path, sr=SAMPLE_RATE)
-                except Exception:
+                except Exception as e:
+                    # Skip the file if it can't be loaded (common with certain GTZAN files)
+                    print(f"Skipping {file_path}: {e}")
                     continue
 
                 # process all segments of audio file
