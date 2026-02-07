@@ -3,10 +3,14 @@ Code for the "[Deep Learning (for Audio) with Python](https://www.youtube.com/pl
 
 This repository is a comprehensive collection of resources and code for understanding and implementing deep learning models for audio tasks. It serves as a practical guide, starting from the absolute basics (building neurons and backpropagation from scratch), moving to TensorFlow implementation, and culminating in building a complete Music Genre Classification system using various architectures (MLP, CNN, RNN-LSTM).
 
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
 ![Librosa](https://img.shields.io/badge/librosa-0.11.0-orange)
 ![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=flat&logo=Keras&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat&logo=Matplotlib&logoColor=black)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ### Note on Versioning
