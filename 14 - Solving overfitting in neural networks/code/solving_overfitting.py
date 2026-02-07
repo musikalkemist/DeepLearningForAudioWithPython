@@ -5,7 +5,7 @@ import tensorflow.keras as keras
 import matplotlib.pyplot as plt
 
 # path to json file that stores MFCCs and genre labels for each processed segment
-DATA_PATH = "path/to/dataset"
+DATA_PATH = "../../GTZAN_dataset/data_10.json"
 
 def load_data(data_path):
     """Loads training dataset from json file.
@@ -97,11 +97,3 @@ if __name__ == "__main__":
 
     # plot accuracy and error as a function of the epochs
     plot_history(history)
-
-
-
-
-
-
-
-

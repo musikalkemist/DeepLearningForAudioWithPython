@@ -4,8 +4,8 @@ from sklearn.model_selection import train_test_split
 import tensorflow.keras as keras
 import matplotlib.pyplot as plt
 
-DATA_PATH = "../13/data_10.json"
-
+# path to json file that stores MFCCs and genre labels for each processed segment
+DATA_PATH = "../../GTZAN_dataset/data_10.json" # path/to/dataset/in/json/file
 
 def load_data(data_path):
     """Loads training dataset from json file.
