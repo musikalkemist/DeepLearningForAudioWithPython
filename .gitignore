@@ -128,5 +128,14 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# json files
+# OS files
+Thumbs.db
+.directory
+.DS_Store
+**/.DS_Store
+**/**/.DS_Store
+
+# Datasets
+/GTZAN_dataset
 *.json
+*.gz
