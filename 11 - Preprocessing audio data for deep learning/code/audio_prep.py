@@ -90,6 +90,3 @@ plt.title("MFCCs")
 
 # show plots
 plt.show()
-
-
-

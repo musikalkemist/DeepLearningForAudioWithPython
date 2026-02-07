@@ -3,8 +3,8 @@ from random import random
 
 
 class MLP(object):
-    """A Multilayer Perceptron class.
-    """
+    
+    """A Multilayer Perceptron class."""
 
     def __init__(self, num_inputs=3, hidden_layers=[3, 3], num_outputs=2):
         """Constructor for the MLP. Takes the number of inputs,
