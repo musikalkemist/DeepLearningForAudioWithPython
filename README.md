@@ -154,4 +154,4 @@ YouTube videos (#yt), PDF-file slides (#sl) and Jupyter Notebooks (#nb) -->
 [18yt]: https://www.youtube.com/watch?v=eCvz-kB4yko
 
 [19yt]: https://www.youtube.com/watch?v=4nXI0h2sq2I
-[19cd]: <19- How to Implement an RNN-LSTM Network for Music Genre Classification/lstm.py>
+[19cd]: <19- How to Implement an RNN-LSTM Network for Music Genre Classification/lstm_genre_classifier.py>
