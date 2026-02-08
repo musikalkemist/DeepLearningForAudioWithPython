@@ -5,12 +5,12 @@ This repository is a comprehensive collection of resources and code for understa
 
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
+![librosa](https://img.shields.io/badge/librosa-9418A8?style=flat&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![Librosa](https://img.shields.io/badge/librosa-0.11.0-orange)
-![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=flat&logo=Keras&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat&logo=Matplotlib&logoColor=black)
+![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-004a96?style=flat&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ### Note on Versioning
@@ -43,18 +43,18 @@ To run the music genre classification lessons (Part 4 & 5), you will need the GT
 
 ### Part 1: Fundamentals & Math
 
-1.  **Course Overview:** _[Video][1yt]_
-2.  **AI, Machine Learning and Deep Learning:** _[Video][2yt]_
-3.  **Implementing an Artificial Neuron from Scratch:** _[Video][3yt] | [Code][3cd]_
-4.  **Vector and Matrix Operations:** _[Video][4yt] | [Code][4cd]_
-5.  **Computation in Neural Networks:** _[Video][5yt] | [Code][5cd]_
+1.  **Course Overview:** _[Video][1yt] | [Slides][1sl]_
+2.  **AI, Machine Learning and Deep Learning:** _[Video][2yt] | [Slides][2sl]_
+3.  **Implementing an Artificial Neuron from Scratch:** _[Video][3yt] | [Slides][3sl] | [Code][3cd]_
+4.  **Vector and Matrix Operations:** _[Video][4yt] | [Slides][4sl]_
+5.  **Computation in Neural Networks:** _[Video][5yt] | [Slides][5sl]_
 
 ---
 
 ### Part 2: Neural Networks from Scratch
 
 6.  **Implementing a Neural Network from Scratch:** _[Video][6yt] | [Code][6cd]_
-7.  **Training a Neural Network (Backprop & Gradient Descent):** _[Video][7yt] | [Code][7cd]_
+7.  **Training a Neural Network (Backprop & Gradient Descent):** _[Video][7yt] | [Slides][7sl]_
 8.  **Implementing Backpropagation from Scratch:** _[Video][8yt] | [Code][8cd]_
 
 ---
@@ -62,7 +62,7 @@ To run the music genre classification lessons (Part 4 & 5), you will need the GT
 ### Part 3: TensorFlow & Audio Preprocessing
 
 9.  **Implementing a Neural Network with TensorFlow 2:** _[Video][9yt] | [Code][9cd]_
-10. **Understanding Audio Data for Deep Learning:** _[Video][10yt] | [Code][10cd]_
+10. **Understanding Audio Data for Deep Learning:** _[Video][10yt] | [Slides][10sl]_
 11. **Preprocessing Audio Data (MFCCs/Spectrograms):** _[Video][11yt] | [Code][11cd]_
 
 ---
@@ -70,17 +70,17 @@ To run the music genre classification lessons (Part 4 & 5), you will need the GT
 ### Part 4: Music Genre Classification Project (MLP)
 
 12. **Preparing the Dataset:** _[Video][12yt] | [Code][12cd]_
-13. **Implementing a Neural Network for Classification:** _[Video][13yt] | [Code][13cd]_
-14. **Solving Overfitting:** _[Video][14yt] | [Code][14cd]_
+13. **Implementing a Neural Network for Classification:** _[Video][13yt] | [Slides][13sl] | [Code][13cd]_
+14. **Solving Overfitting:** _[Video][14yt] | [Slides][14sl] | [Code][14cd]_
 
 ---
 
 ### Part 5: Advanced Architectures (CNN & RNN-LSTM)
 
-15. **Convolutional Neural Networks (CNN) Explained:** _[Video][15yt]_
+15. **Convolutional Neural Networks (CNN) Explained:** _[Video][15yt] | [Slides][15sl]_
 16. **Implementing a CNN for Music Genre Classification:** _[Video][16yt] | [Code][16cd]_
-17. **Recurrent Neural Networks (RNN) Explained:** _[Video][17yt]_
-18. **Long Short Term Memory (LSTM) Explained:** _[Video][18yt]_
+17. **Recurrent Neural Networks (RNN) Explained:** _[Video][17yt] | [Slides][17sl]_
+18. **Long Short Term Memory (LSTM) Explained:** _[Video][18yt] | [Slides][18sl]_
 19. **Implementing an RNN-LSTM for Music Genre Classification:** _[Video][19yt] | [Code][19cd]_
 
 ---
@@ -109,53 +109,61 @@ python mlp.py  # Replace with the specific script name
 <!-- Reference links for every chapter:
 YouTube videos (#yt), PDF-file slides (#sl) and Jupyter Notebooks (#nb) -->
 [1yt]: https://www.youtube.com/watch?v=fMqL5vckiU0
+[1sl]: <01 - Course overview/slides/Course overview.pdf>
 
 [2yt]: https://www.youtube.com/watch?v=1LLxZ35ru_g
+[2sl]: <02 - Ai, machine learning and deep learning/slides/AI, machine learning and deep learning.pdf>
 
 [3yt]: https://www.youtube.com/watch?v=qxIaW-WvLDU
-[3cd]: <3- Implementing an artificial neuron from scratch/neuron.py>
+[3cd]: <03 - Implementing an artificial neuron from scratch/code/artificialneuron.py>
+[3sl]: <03 - Implementing an artificial neuron from scratch/slides/Implementing an artificial neuron from scratch.pdf>
 
 [4yt]: https://www.youtube.com/watch?v=FmD1S5yP_os
-[4cd]: <4- Vector and matrix operations/operations.py>
+[4sl]: <04 - Vector and matrix operations/slides/Vector and matrix operations.pdf>
 
 [5yt]: https://www.youtube.com/watch?v=QUCzvlgvk6I
-[5cd]: <5-  Computation in neural networks/computation.py>
+[5sl]: <05 - Computation in neural networks/slides/Computation in neural networks.pdf>
 
 [6yt]: https://www.youtube.com/watch?v=0oWnheK-gGk
-[6cd]: <6- Implementing a neural network from scratch in Python/mlp.py>
+[6cd]: <06 - Implementing a neural network from scratch/code/mlp.py>
 
 [7yt]: https://www.youtube.com/watch?v=ScL18goxsSg
-[7cd]: <7- Training a neural network/train.py>
+[7sl]: <07 - Bagkpropagation and gradient descent/slides/Training a neural network_ Backward propagation and gradient descent.pdf>
 
 [8yt]: https://www.youtube.com/watch?v=Z97XGNUUx9o
-[8cd]: <8- TRAINING A NEURAL NETWORK/mlp.py>
+[8cd]: <08 - Training a neural network - Implementing back propagation from scratch/code/mlp.py>
 
 [9yt]: https://www.youtube.com/watch?v=JdXxaZcQer8
-[9cd]: <9- How to implement a (simple) neural network with TensorFlow 2/mlp_tf.py>
+[9cd]: <09 - How to imlement a simple neural network with TensorFlow/code/mlp.py>
 
 [10yt]: https://www.youtube.com/watch?v=m3XbqfIij_Y
-[10cd]: <10 - Understanding audio data for deep learning/audio_prep.py>
+[10sl]: <10 - Understanding audio data for deep learning/slides/Understanding audio data for  deep learning.pdf>
 
 [11yt]: https://www.youtube.com/watch?v=Oa_d-zaUti8
-[11cd]: <11- Preprocessing audio data for Deep Learning/preprocess.py>
+[11cd]: <11 - Preprocessing audio data for deep learning/code/audio_prep.py>
 
 [12yt]: https://www.youtube.com/watch?v=szyGiObZymo
-[12cd]: <12- Music genre classification: Preparing the dataset/prep_dataset.py>
+[12cd]: <12 - Music genre classification - Preparing the dataset/code/extract_data_fast.py>
 
 [13yt]: https://www.youtube.com/watch?v=_xcFAiufwd0
-[13cd]: <13- Implementing a neural network for music genre classification/classifier.py>
+[13cd]: <13 - Implementing a neural network for music genre classification/code/mlp_genre_classifier.py>
+[13sl]: <13 - Implementing a neural network for music genre classification/slides/Implementing a neural network for music genre calssification.pdf>
 
 [14yt]: https://www.youtube.com/watch?v=Gf5DO6br0ts
-[14cd]: <14-  SOLVING OVERFITTING in neural networks/classifier.py>
+[14cd]: <14 - Solving overfitting in neural networks/code/solving_overfitting.py>
+[14sl]: <14 - Solving overfitting in neural networks/slides/Solving overfitting in neural networks.pdf>
 
 [15yt]: https://www.youtube.com/watch?v=t3qWfUYJEYU
+[15sl]: <15 - How does a convolutional neural network work/slides/How does a convolutional  neural network work.pdf>
 
 [16yt]: https://www.youtube.com/watch?v=dOG-HxpbMSw
-[16cd]: <16- How to Implement a CNN for Music Genre Classification/cnn_classifier.py>
+[16cd]: <16 - How to implement a CNN for music genre classification/code/cnn_genre_classifier.py>
 
 [17yt]: https://www.youtube.com/watch?v=DY82Goknf0s
+[17sl]: <17 - Recurrent Neural Networks explained easily/slides/Recurrent Neural Networks explained easily.pdf>
 
 [18yt]: https://www.youtube.com/watch?v=eCvz-kB4yko
+[18sl]: <18 - LSTM networks explained easily/slides/LSTM networks  explained easily.pdf>
 
 [19yt]: https://www.youtube.com/watch?v=4nXI0h2sq2I
-[19cd]: <19- How to Implement an RNN-LSTM Network for Music Genre Classification/lstm_genre_classifier.py>
+[19cd]: <19 - How to implement an RNN-LSTM for music genre classification/code/lstm_genre_classifier.py>
